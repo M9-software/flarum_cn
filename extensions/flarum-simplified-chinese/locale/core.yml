@@ -295,6 +295,7 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
+      confirmation_required_message: "你需要确认邮箱地址才能登录. 我们已经将确认邮件发送到 {email}. 如果没有在收件箱中找到，看看是否被放在垃圾邮件里了."
       forgot_password_link: "忘记了密码？"
       invalid_login_message: 登入信息有误
       password_placeholder: => core.ref.password
