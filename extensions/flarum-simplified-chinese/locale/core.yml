@@ -292,6 +292,7 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
+      confirmation_required_message: "我们给 {email} 邮箱发送了激活邮件。如果没有看到，可以到垃圾邮件里找找"
       forgot_password_link: "忘记了密码？"
       invalid_login_message: 登入信息有误
       password_placeholder: => core.ref.password
