@@ -103,6 +103,8 @@ core:
     # These translations are used in the Extensions page.
     extensions:
       add_button: 添加插件
+     disable_button: 关
+     enable_button: 开
       settings_button: => core.ref.settings
       uninstall_button: 卸载
 
@@ -112,7 +114,7 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: 请稍后...
+      title: 请稍侯...
 
     # These translations are used in the navigation bar.
     nav:
@@ -227,6 +229,7 @@ core:
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: 登入以回复
       rename_button: => core.ref.rename
+     rename_text: 请输入新标题
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
@@ -427,13 +430,49 @@ core:
       glue_text: ", "
       three_text: "{first}, {second}, 还有 {third}"
       two_text: "{first} 和 {second}"
+  # Strings in this namespace are used in basic HTML interface.
+  basic:
+    loading_text: 加载中......
+    load_error_message: 加载出错，请刷新页面或更换浏览请再试。
+    javascript_disabled_message: 请使用更新版本的浏览器访问效果更佳。
+    next_page_button: 下一页
+    previous_page_button: 上一页
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    all_discussions: 所有话题
+    change_email: 更改邮箱地址
+    change_password: 修改密码
+    confirmation_email_sent: "我们给你的 {email} 邮箱发送了邮件. 如果没有在收件箱中找到，看看是否被放在垃圾邮件里了."
+    delete: 删除
+    delete_forever: 永久删除
+    discussions: 话题
+    edit: 编辑
+    email: 邮件
+    load_more: 更多
+    log_in: 登录
+    log_out: 退出
+    mark_all_as_read: 标记为已读
+    notifications: 提示
+    okay: OK                                     # Referenced by flarum-tags.yml
+    password: 密码
+    reply: 回复                                 # Referenced by flarum-mentions.yml
+    restore: 恢复
+    save_changes: 保存                   # Referenced by flarum-tags.yml
+    settings: 设置
+    sign_up: 注册
+    some_others: "{count} other|{count} 其它"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    username: 用户名
+    write_a_reply: 回复...
+    you: 你                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
+
 
   # Translations in this namespace are used in views other than Flarum's normal JS client.
   views:
 
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
-      javascript_disabled_message: 使用更先进的浏览器访问效果更佳。
+      javascript_disabled_message: 请使用更新版本的浏览器访问效果更佳。
       load_error_message: 加载出错，请刷新页面或更换浏览请再试。
       loading_text: 正在载入
 
